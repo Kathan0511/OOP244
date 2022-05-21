@@ -1,0 +1,5 @@
+ 
+In this workshop i have learned some of important concepts like define and create binary member operator than define and create a type conversion operator, define and a create unary member operator
+define and create helper binary operator between classes and define and create a helper operator between a primitive type and a class.
+
+These were the main things that i learned in this workshop it was pretty tough but managed to do it. Thankyou
