@@ -1,0 +1,74 @@
+Script started on Thu 18 Mar 2021 02:49:45 PM EDT
+==203706== Memcheck, a memory error detector
+==203706== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==203706== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==203706== Command: ws
+==203706== 
+----------------------------------------
+|> T1: Vehicle
+----------------------------------------
+| 2010 | VVV-111 | Factory
+
+| VVV-111| |             Factory ---> Downtown Toronto    |
+| VVV-111| |    Downtown Toronto ---> Mississauga         |
+| VVV-111| |         Mississauga ---> North York          |
+
+| 2010 | VVV-111 | North York
+
+----------------------------------------
+|> T2: Read/Write
+----------------------------------------
+Built year: 2020
+License plate: abc-111
+Current location: Toronto
+
+| 2020 | abc-111 | Toronto
+
+----------------------------------------
+|> T3: Truck
+----------------------------------------
+|  T-1111| |             Factory ---> Toronto HQ          |
+
+|  T-1111| |          Toronto HQ ---> Toronto Deposit     |
+Cargo loaded!
+| 2015 | T-1111 | Toronto Deposit | 2345/5432
+
+|  T-1111| |     Toronto Deposit ---> Montreal            |
+Cargo loaded!
+| 2015 | T-1111 | Montreal | 5432/5432
+
+|  T-1111| |            Montreal ---> New York            |
+Adding cargo failed!
+| 2015 | T-1111 | New York | 5432/5432
+
+|  T-1111| |            New York ---> New Jersey          |
+Cargo unloaded!
+| 2015 | T-1111 | New Jersey | 0/5432
+
+|  T-1111| |          New Jersey ---> Toronto             |
+Unloading cargo failed!
+| 2015 | T-1111 | Toronto | 0/5432
+
+----------------------------------------
+|> T4: Read/Write
+----------------------------------------
+Built year: 2019
+License plate: def-222
+Current location: Montreal
+Capacity: 2345
+Cargo: 1234
+
+| 2019 | def-222 | Montreal
+| 2019 | def-222 | Montreal | 1234/2345
+
+==203706== 
+==203706== HEAP SUMMARY:
+==203706==     in use at exit: 0 bytes in 0 blocks
+==203706==   total heap usage: 19 allocs, 19 frees, 73,278 bytes allocated
+==203706== 
+==203706== All heap blocks were freed -- no leaks are possible
+==203706== 
+==203706== For lists of detected and suppressed errors, rerun with: -s
+==203706== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Thu 18 Mar 2021 02:51:06 PM EDT
