@@ -1,0 +1,8 @@
+ 
+
+
+OOP 244 is a complete new, different and hard concept for me to understand as i had some understanding of IPC144 and its basic concepts but still i found this subject hard and as i have studied C++ before so C language is sort of inconvinient for me. 
+
+This time i learned the new concept of Namespace. As a namespace is a defined space under code where the variables and functions declared are hidden from the rest of the code unless explicitly revealed. The lab and DIY made me the concept more clear. We also made the different files for code sections which helped to find bugs easily and write code more efficiently. The second important thing i learned was the concept of Complication Safegaurd, it helped me to avoid multiple inclusion of header file while compiling the code. Also learned about linking modules that makes accessing the code in other files much easy.
+
+Overall, I learned some new concepts which can be helpful to me in future coding. It was sort of hard but managed to do it.
