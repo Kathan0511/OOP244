@@ -1,0 +1,9 @@
+ 
+In this workshop i learned many important things. Mainly the member function which plays an important role while writing a secure code. 
+
+It's Private - It plays prominent role while writing a code where the function which are not made for the general people can be hide. Moreover it gives a privacy to the code and access to the user by which the code can be written in an organised manner. A function in private cannot be used outside the class. Moreover, in a class is member function is not declared than the program it self takes the class private. It's Public too - It's used when some of the functions does not need that much privacy and can be shown to the users so that they can identify the uses for that function. Mainly the function which have general information can be used or consider under the public member function. Public function can be called outside the class. In the code  where structure is used as a class then the program itself takes the function as public.
+In this workshop i also learned how to use standard library ‘std’ with scope resolution ‘::’ which mainly helps the function to use the standard library facilities in the code in a simpler way. 
+
+Here also the concept for de-locating memory plays an important role. Mostly the memory gets consumed while adding or subtracting the items for food with calories but de-locating it at regular interval of time helps to avoid this allocation. For that a function for de-location is called in the code which helps to run the de-location by just calling that function several times in the main code. It is used in a public member function so that it can be called outside the class also.
+
+Overall, Doing the workshop was bit time consuming but learned a lot important functions and concepts.
